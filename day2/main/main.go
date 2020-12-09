@@ -74,15 +74,15 @@ func countValidPasswords(sentenceArr []Sentence) int{
 }
 
 func main() {
+	start := time.Now()
 
 	//retrieve Input
-	inputStr := readData("/Users/erenkocaaga/go/src/adventOfCode/day2/main/input.txt")
+	inputStr := readData("./day2/main/input.txt")
 
 	//parse Input
 	sentenceArr := parseInput(inputStr)
 
 	//count valid passwords
-	start := time.Now()
 	counter := countValidPasswords(sentenceArr)
 	log.Printf("Count Valid Passwords took %s", time.Since(start))
 
