@@ -50,7 +50,7 @@ func parseInput(inputStr string) []int {
 func main() {
 
 	//retrieve Input
-	inputStr := readData("/Users/erenkocaaga/go/src/adventOfCode/day1/main/input.txt")
+	inputStr := readData("./day1/main/input.txt")
 
 	//parse Input
 	dataIntArr := parseInput(inputStr)
